@@ -5,8 +5,10 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Python dependencies'
-                bat 'pip install playwright pytest-playwright pytest-html'
-                bat 'playwright install chromium'
+                 bat 'C:\\Users\\shahz\\AppData\\Local\\Python\\bin\\python.exe -m pip install playwright pytest-playwright pytest-html'
+                bat 'C:\\Users\\shahz\\AppData\\Local\\Python\\bin\\python.exe -m playwright install chromium'
+            }
+
             }
         }
 
